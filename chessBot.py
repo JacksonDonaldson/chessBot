@@ -7,6 +7,8 @@ challenges = {}
 games = {}
 droffers = []
 
+discordAPIToken = "INSERT TOKEN HERE"
+
 @client.event
 async def on_ready():
     print("logged in as {0.user}".format(client))
@@ -226,4 +228,4 @@ async def resign(message):
     games.pop(board.white)
     games.pop(board.black)
     
-client.run("ODQ0NTQ4NTE4MzgzNDUyMTcx.YKUBGQ.BAh6ipKV26j_2jaycki7X8HwAKo")        
+client.run(discordAPIToken)        
